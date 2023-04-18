@@ -1,5 +1,5 @@
 #for installion
-sudo apt-get install ufw
+sudo ufw default deny incoming
 sudo ufw allow ssh
 sudo ufw allow 443
 sudo ufw allow 80
