@@ -4,7 +4,7 @@ from requests import get
 from sys import argv
 
 if __name__ == '__main__':
-    user = get('https://jsonplaceholder.typicode.com/users' + argv[1])
+    user = get('https://jsonplaceholder.typicode.com/users/' + argv[1])
     name = user.json().get("name")
     todo = get('https://jsonplaceholder.typicode.com/todos')
     todos = todo.json()
