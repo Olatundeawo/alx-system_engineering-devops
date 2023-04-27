@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-""" Python script that uses REST API """
+""" Python script that uses REST API.
+"""
 from requests import get
 from sys import argv
+
 
 if __name__ == '__main__':
     user = get('https://jsonplaceholder.typicode.com/users/' + argv[1])
